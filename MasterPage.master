@@ -1,0 +1,65 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="content">
+            <div class="header">
+                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/logo.gif" PostBackUrl="~/Default.aspx" AlternateText=":: DevMedia - E-Commerce ::" />
+            
+               
+            </div>
+            
+            <div class="login">
+              
+                 <asp:LoginView ID="LoginView1" runat="server">
+                    <LoggedInTemplate>
+                     Welcome,   <asp:LoginName ID="LoginName1" runat="server" />
+                        <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                    </LoggedInTemplate>
+                    <AnonymousTemplate>
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                    </AnonymousTemplate>
+                </asp:LoginView>
+                
+                </div>
+                
+                
+            <div class="topMenu">
+                <asp:ImageButton ID="btnCart" runat="server" ImageUrl="~/Images/cart.gif" PostBackUrl="~/ShoppingCart.aspx" AlternateText="Cart" CausesValidation="False" />
+                Cart<br />
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2">
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+               </div>
+            <div class="LeftColumn">
+                <asp:ContentPlaceHolder ID="ContentLeft" runat="server">
+                
+                <div class="Menu">                  
+                        
+                        <userControl:Menu runat="server" ID="Menu" />
+                    <br />
+                    <br />
+                    <br />
+                  </div>  
+                    
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="CenterColumn">
+                <asp:ContentPlaceHolder ID="ContentCenter" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">
+                Copyright © 2006 by the DevMedia
+            </div>
+        </div>
+    
+   
+    </form>
+</body>
+</html>

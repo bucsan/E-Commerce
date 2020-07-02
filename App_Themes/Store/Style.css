@@ -1,0 +1,381 @@
+﻿body {
+}
+
+
+html
+{
+    background-color:Silver;
+    font:12px Verdana;
+}
+
+.header
+{
+    border-bottom: solid 1px blue;
+    padding: 5px;
+    background-color: #CCFF99;
+    
+}
+
+.login
+{
+    position: absolute;   
+    right: 100px;
+    top: 50px;
+}
+
+.topMenu
+{
+    float:right;
+    height:50px;
+    padding-right: 50px;
+    
+}
+
+
+
+.content
+{
+    margin: auto;
+    border: solid 1px black;
+    width: 760px;
+    background-color: White;
+    
+    
+}
+
+
+.LeftColumn
+{
+    float: left;
+    width: 100px;
+    padding: 5px;
+    background-color: #D1DDE9;       
+}
+
+
+.CenterColumn
+{
+    float: right;
+    width: 500px;
+    padding: 8px;
+}
+
+.footer
+{
+    clear: both;
+    border-top: solid 1px navy;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    background-color: #CCFF99;
+}
+
+
+
+
+
+/* Menu */
+
+.Menu {
+	width: 100px;	
+	
+}
+.Menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;		
+}
+.Menu li
+{
+    border-bottom: 1px solid;
+    border-color: #ffffff; 	
+	font-family: Arial;
+	font-weight: bold;
+	font-size:10px;	
+	text-align:left;
+			
+		      
+}
+
+.Menu li a  {
+	display: block;	
+	background-color: #D1DDE9;
+	color: #555555;
+	text-decoration: none;
+	padding: 5px 5px 5px 0.5em;	
+	border-left: 12px solid #D1DDE9;	
+	
+}
+.Menu li a:hover {
+	background-color: #aec3d8;	
+	font-family: Arial;
+	font-size:10px;
+	color: #555555;
+	border-left: 12px solid #aec3d8;
+}
+
+
+
+
+
+.tabs
+{
+    position:relative;
+    top:1px;
+    left:10px;
+}
+.tab
+{
+    border:solid 1px black;
+    background-color:#eeeeee;
+    padding:2px 10px;
+}
+.selectedTab
+{
+    background-color:white;
+    border-bottom:solid 1px white;
+}
+.tabContents
+{
+    border:solid 1px black;
+    padding:10px;
+    background-color:white;
+}
+
+.paddedList li
+{
+    padding:10px;
+}
+
+
+.tabs
+{
+    position:relative;
+    top:1px;
+    left:10px;
+}
+.tab
+{
+    border:solid 1px black;
+    background-color:#eeeeee;
+    padding:2px 10px;
+}
+.selectedTab
+{
+    background-color:white;
+    border-bottom:solid 1px white;
+}
+.tabContents
+{
+    border:solid 1px black;
+    padding:10px;
+    background-color:white;
+}
+
+.grid th, .grid td
+{
+    padding:8px;
+    border-bottom:solid 1px black;
+}
+
+
+
+.floatPanel
+{
+    display:none;
+    position:absolute;
+    top:100px;
+    left:100px;
+    padding:10px;
+    border:solid 4px black;
+    background-color:white;
+}
+
+
+.webWindow
+{
+    width:400px;
+    border:Outset;
+    background-color:white;
+}
+.webWindowBody
+{
+    padding:10px;
+}
+.webWindowTitleBar
+{
+    font:14px Verdana,Sans-Serif;
+    padding-left:10px;
+    background-color:Blue;
+    color:white;
+    cursor:move;
+}
+.webWindowTitleText
+{
+    float:left;
+}
+.webWindowClose
+{
+    background-color:Maroon;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FORMAT PRODUCT CATEGORIES */
+
+.categoryList
+{
+    width:100%;
+}
+
+.categoryList td
+{
+    width:50%;
+    padding:20px;
+    vertical-align:top;
+}
+
+.categoryName
+{
+    font-size:16px;
+    border-bottom:solid 1px black;
+}
+
+/* FORMAT PRODUCTS */
+
+
+.productList
+{
+    width:100%;
+}
+
+.productList td
+{
+    width:50%;
+    padding:20px;
+    vertical-align:top;
+}
+
+.productName
+{
+    font-size:16px;
+    border-bottom:solid 1px black;
+}
+
+.productImage
+{
+    width:100px;
+    padding:5px;
+    float:left;
+}
+
+
+.fullProductName
+{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* FORMAT FORMS */
+label
+{
+    font-weight:bold;
+}
+
+.instructions
+{
+    padding:3px;
+    font-size:10px;
+}
+
+/* SHOPPING CART */
+.cart
+{
+    width:100%;
+    font-size:10px;
+    border:solid 1px black;
+}
+
+.cartAlternating
+{
+    background-color:silver;
+}
+
+.cartFooter
+{
+    text-align:center;
+    white-space:nowrap;
+}
+.cart th
+{
+    text-align:left;
+    padding:5px;
+}
+
+.cart caption
+{
+    font-weight:bold;
+}
+
+.cartBig
+{
+    width:100%;
+}
+
+.cartBig td
+{
+    padding:5px;
+}
+
+.cartBig th
+{
+    text-align:left;
+    padding:5px;
+}
+
+.cartTotalFooter
+{
+    border-top:solid 2px black;
+}
+
+/* FORM LAYOUT */
+
+.leftForm
+{
+    float:left;
+    width:140px;
+    text-align:right;
+    margin-right:20px;
+    line-height:150%
+}
+
+.rightForm
+{
+    float:left;
+    width:175px;
+    line-height:150%   
+}
+
+.colForm
+{
+    float:left;
+    width:45%;
+}
+
+
+
+legend
+{
+    color:Navy;
+}
+
+.paddedList li
+{
+    padding:10px;
+}
+
+.scrollBox
+{
+    width:380px;
+    overflow:auto;
+}

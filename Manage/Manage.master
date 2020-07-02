@@ -1,0 +1,47 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Manage.master.cs" Inherits="Manage_Manage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+               
+        <asp:HyperLink
+            id="HyperLink1"
+            NavigateUrl="~/Default.aspx"
+            Runat="server">            
+         </asp:HyperLink>
+         
+          <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/logo.gif" PostBackUrl="~/Default.aspx"  AlternateText=":: DevMedia - E-Commerce ::"/>
+
+        <asp:Menu
+            id="Menu1"
+            Orientation="Horizontal"
+            CssClass="tabs"
+            StaticMenuItemStyle-CssClass="tab"
+            StaticSelectedStyle-CssClass="selectedTab"
+            Runat="server" >            
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Manage/Categories/Default.aspx" Text="Categories" Value="Categories">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Manage/Products/Default.aspx" Text="Products" Value="Products"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Manage/Orders/Default.aspx" Text="Orders" Value="Orders">
+                </asp:MenuItem>
+            </Items>
+            <StaticMenuItemStyle CssClass="tab" />
+            <StaticSelectedStyle CssClass="selectedTab" />
+        </asp:Menu>
+        
+       
+        <div class="tabContents">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
